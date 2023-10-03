@@ -10,5 +10,8 @@
 
 if ! make ; then
 	echo "build failed, commit rejected"
+	make clean
 	exit 1
+else
+	make clean
 fi
